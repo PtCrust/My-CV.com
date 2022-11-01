@@ -222,7 +222,7 @@ section{
     }
     .card{
         background-color: white;
-        width: 8em;
+        width: 9em;
         box-shadow: 0 5px 25px rgba(1 1 1 /15%);
         border-radius: 5px;
         padding: 5px;
@@ -231,7 +231,7 @@ section{
         z-index: 2;
     }
     .card:hover{
-        transform: scale(1.5);
+        transform: scale(1.2);
         z-index: 5;
     }
     
