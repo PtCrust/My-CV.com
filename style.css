@@ -135,6 +135,9 @@ section{
     margin: 10px;
 
 }
+.info a:hover {
+  text-decoration: underline;
+}
 
 @media only screen and (max-width:500px) {
  
@@ -251,6 +254,10 @@ section{
         font-weight: 700;
         margin: 10px;
     
+    }
+    
+    .info a:hover {
+       text-decoration: underline;
     }
 
 
