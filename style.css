@@ -117,8 +117,9 @@ section{
     transform: scale(1.2);
     z-index: 50;
 }
-
-
+.img{
+    width: auto;
+}
 .icon{
     color: black;
     font-size: 8em;
