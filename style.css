@@ -66,6 +66,8 @@ section{
     display: inline-block;
     margin-top: 10px;
     color:black;
+    font-variant: small-caps;
+    font-style: italic;
     font-size: 2.5em;
     font-weight: 800;
 
@@ -116,6 +118,9 @@ section{
 .card:hover{
     transform: scale(1.2);
     z-index: 50;
+}
+.img{
+    width:12em;
 }
 
 
@@ -238,7 +243,7 @@ section{
         z-index: 5;
     }
     .img{
-        width:auto;
+        width: 100px;;
     }
     
     
@@ -295,11 +300,14 @@ section{
     background-color: #04AA6D;
     color: white;
   }
-  
 
+}
 
-
-
-
-
+#preloader {
+    background: #333 url("images/loader2.gif") no-repeat center center;
+    position:fixed;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
 }
