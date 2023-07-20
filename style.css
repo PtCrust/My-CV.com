@@ -7,6 +7,12 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+body{
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 
 header {
@@ -17,7 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items:center ;
-    padding: 30px 100px;
+    padding: 10px 80px;
+    
     
 }
  header .navbar{
@@ -28,20 +35,54 @@ header {
     text-decoration: none;
     color: #04AA6D;
     text-transform: uppercase;
+    font-family: cursive;
     font-weight: 700;
     font-size: 1.5em;
 }
-.navigation a{
+ul
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#333;
+}
+li
+{
+    float:left;
+    padding-top: 10px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+li a 
+{
+    font-weight: bolder;
+    font-size: 25px;
+    /* color:black; */
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+li a:hover
+{
+    /* background-color:#04AA6D; */
+    color:#04AA6D;
+
+}
+/* .navigation a{
     text-decoration:none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.3em;
     padding-left: 30px;
-}
-.navigation a:hover{
-    color: blueviolet;
-}
+} */
+
+/* .navigation a:hover{ */
+    /* color: blueviolet; */
+    /* color: white;
+    background-color: #04AA6D; */
+/* } */
 
 section{
     padding: 80px 80px;
@@ -84,11 +125,11 @@ section{
 
 .social-icons a{
     color: white;
-    font-size: 1.7em;
+    font-size: 2.5em;
     padding-right: 30px;
 }
 .social-icons a:hover{
-    color:blueviolet;
+    color:#04AA6D;
 }
 .title{
     display: flex;
@@ -108,7 +149,7 @@ section{
 }
 .card{
     background-color: white;
-    width: 15.25em;
+    width: 15em;    
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
     border-radius: 10px;
     padding: 25px;
@@ -116,7 +157,7 @@ section{
     transition: 0.5s ease;
 }
 .card:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 50;
 }
 .img{
@@ -126,7 +167,7 @@ section{
 
 .icon{
     color: black;
-    font-size: 8em;
+    font-size: 4em;
     text-align: center;
 }
 .info{
@@ -279,10 +320,11 @@ section{
     overflow: hidden;
     background-color: #333;
     z-index: 100;
+
   }
   
   header .navbar a {
-    float: left;
+    float:none;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
