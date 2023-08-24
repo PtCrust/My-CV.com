@@ -24,6 +24,7 @@ header {
     justify-content: space-between;
     align-items:center ;
     padding: 10px 80px;
+    height: 70px;
     
     
 }
@@ -31,13 +32,33 @@ header {
     display:none;
 }
 
+ nav a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-left: 30px;
+} 
+
+ nav a:hover{ 
+    color: white;
+    /* background-color: #04AA6D;  */
+ } 
+
+
 .logo{
     text-decoration: none;
     color: #04AA6D;
     text-transform: uppercase;
     font-family: cursive;
     font-weight: 700;
+    display: flex;
     font-size: 1.5em;
+}
+.logo:hover{
+    color: white;
+    font-weight: 900;
 }
 ul
 {
@@ -65,24 +86,11 @@ li a
 }
 li a:hover
 {
-    /* background-color:#04AA6D; */
     color:#04AA6D;
+    text-decoration:underline #04AA6D 3px;
+    
 
 }
-/* .navigation a{
-    text-decoration:none;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.3em;
-    padding-left: 30px;
-} */
-
-/* .navigation a:hover{ */
-    /* color: blueviolet; */
-    /* color: white;
-    background-color: #04AA6D; */
-/* } */
 
 section{
     padding: 80px 80px;
@@ -104,6 +112,10 @@ section{
     font-weight: 500;
 }
 .main h2 span{
+    background-color: rgba(128, 128, 128, 0.562);
+    border-radius: 7px;
+    padding: 7px;
+    border:#333 3px solid;
     display: inline-block;
     margin-top: 10px;
     color:black;
@@ -120,6 +132,15 @@ section{
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+#btnCV{
+    background-color: #04AA6D;
+    padding: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    border: #333 1px solid;
 }
 
 
@@ -187,23 +208,73 @@ section{
 
 @media only screen and (max-width:500px) {
  
-    header {
-        display:contents;
+header {
+        display:block;
         position:fixed;
         background-color: #333;
         justify-content: space-between;
-        align-items: center;
         padding:  0px; 
         z-index: 999;
+        height: auto;
     }
+header .navbar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+header .navbar div button{
+        display: flex;
+        margin: 10px;
+        float: right;
+
+    }
+
+.navbar div .menu{
+    display:none;
+ }
+ .navbar .iconn{
+    float: right;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 30px;
+    border: none;
+    margin-right: 20px;
+ }
+
+.navbar div .menu a {
+    display:inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+.navbar div .menu a:hover {
+    color:#04AA6D;
+  }
+  
+.navbar  a.active {
+    background-color: #04AA6D;
+    height: 50px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    float: left;
+  }
+
+
+
+
     
    .logo{
     display: none;
    }
-   .navigation{
-    display: none;
-   }
-    .navigation a{
+    nav{
         display: none;
     }
     
@@ -310,40 +381,11 @@ section{
     }
 
 
-    
+}    
       
 
 /*0000000000000000000000000000000000000000000000*/
-   header .navbar{
-    position:fixed;
-    display: flex;
-    overflow: hidden;
-    background-color: #333;
-    z-index: 100;
-
-  }
   
-  header .navbar a {
-    float:none;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-  }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
-}
 
 #preloader {
     background: #333 url("images/loader2.gif") no-repeat center center;

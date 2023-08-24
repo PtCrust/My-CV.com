@@ -1,13 +1,15 @@
 
-var menuList = document.getElementById("menuList");
-menuList.style.maxHeight = "0px";
-function togglemenu(){
-    if(menuList.style.maxHeight == "0px")
-    {
-        menuList.style.maxHeight = "130px";
+function menuList(){
+   let menu = document.getElementById('menu');
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
     }
-    else{
-        menuList.style.maxHeight = "0px";
+  
+}
 
-    }
+function downloadCV(){
+  let btn  = document.getElementById("btnCV");
+  
 }
